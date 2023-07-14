@@ -1,4 +1,4 @@
-import React, { SVGAttributes } from 'react'
+import React, { SVGAttributes, useMemo } from 'react'
 
 const CodeBracketIcon = (props: SVGAttributes<SVGElement>) => {
   return (
@@ -62,20 +62,23 @@ const DeveloperCard = ({ title, desc }: CardUtilProps) => {
 }
 
 export const About = () => {
-  const cardUtils = [
-    {
-      title: 'Manager',
-      desc: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, possimus.',
-    },
-    {
-      title: 'Director',
-      desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos pariatur, incidunt sit harum culpa aliquam!',
-    },
-    {
-      title: 'Web Developer',
-      desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente consequuntur vitae nisi.',
-    },
-  ]
+  const cardUtils = useMemo(
+    () => [
+      {
+        title: 'Manager',
+        desc: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, possimus.',
+      },
+      {
+        title: 'Director',
+        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos pariatur, incidunt sit harum culpa aliquam!',
+      },
+      {
+        title: 'Web Developer',
+        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente consequuntur vitae nisi.',
+      },
+    ],
+    [],
+  )
   return (
     <section className='text-gray-700 border-t border-gray-200 ' id='about'>
       <div className='container px-5 py-24 mx-auto'>
