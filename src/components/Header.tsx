@@ -25,8 +25,8 @@ export const Header = () => {
           <span className='text-xl ml-3'>K.Kawa</span>
         </a>
         <nav className='md:ml-auto text-base'>
-          {items.map(({ title, id }) => (
-            <a key={id} href={id} className='mr-5 hover:text-blue-400 duration-300'>
+          {items.map(({ title, id }, index) => (
+            <a key={'navbar-' + index} href={id} className='mr-5 hover:text-blue-400 duration-300'>
               {title}
             </a>
           ))}
