@@ -26,7 +26,7 @@ export const Header = () => {
         </a>
         <nav className='md:ml-auto text-base'>
           {items.map(({ title, id }) => (
-            <a href={id} className='mr-5 hover:text-blue-400 duration-300'>
+            <a key={id} href={id} className='mr-5 hover:text-blue-400 duration-300'>
               {title}
             </a>
           ))}
