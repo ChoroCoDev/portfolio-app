@@ -9,7 +9,7 @@ type SkillCardProps = {
 const SkillCard = ({ title, level }: SkillCardProps) => {
   const levelPoint = useMemo(() => level + '%', [])
   return (
-    <React.Fragment key={title}>
+    <React.Fragment>
       <h2>{title}</h2>
       <div className='shadow bg-green-100 mt-2 mb-4'>
         <div className='bg-green-600 text-xs leading-none py-1 text-center text-white' style={{ width: levelPoint }}>
@@ -64,8 +64,8 @@ export const Skills = () => {
         {/* right side */}
         <div className='lg:pl-12 lg:py-6 w-full lg:w-1/2'>
           <h1 className='text-2xl sm:text-3xl font-medium text-gray-900 mb-5 text-center lg:text-left'>My Skills</h1>
-          {skillUtils.map(skillUtil => (
-            <SkillCard {...skillUtil} />
+          {skillUtils.map((skillUtil, index) => (
+            <SkillCard {...skillUtil} key={'skill-card-' + index} />
           ))}
         </div>
       </div>

@@ -9,7 +9,7 @@ export const Main = () => {
           <h1 className='text-3xl sm:text-6xl text-gray-900 font-medium mb-4'>
             Hi!
             <br />
-            I'm K.Kawa
+            I&apos;m K.Kawa
             <br />
             Web Developer
           </h1>

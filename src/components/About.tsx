@@ -37,12 +37,11 @@ const ArrowRightIcon = (props: SVGAttributes<SVGElement>) => {
 type CardUtilProps = {
   title: string
   desc: string
-  index: number
 }
 
-const DeveloperCard = ({ title, desc, index }: CardUtilProps) => {
+const DeveloperCard = ({ title, desc }: CardUtilProps) => {
   return (
-    <div className='md:w-1/3 p-4' key={'developer-card-' + index}>
+    <div className='md:w-1/3 p-4'>
       <div className='bg-gray-200 rounded-lg p-8'>
         <div className='flex items-center mb-3 px-1 py-1'>
           <div className='bg-green-500 text-white rounded-full'>
@@ -110,7 +109,7 @@ export const About = () => {
         {/* カードのdivタグ */}
         <div className='flex flex-wrap'>
           {cardUtils.map((cardUtil, index) => (
-            <DeveloperCard {...cardUtil} index={index} />
+            <DeveloperCard {...cardUtil} key={'developer-card-' + index} />
           ))}
         </div>
       </div>
