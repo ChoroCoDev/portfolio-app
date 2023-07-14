@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React, { useMemo } from 'react'
 
 type SkillCardProps = {
@@ -58,7 +59,7 @@ export const Skills = () => {
       <div className='container px-5 py-24 mx-auto flex flex-wrap items-center'>
         {/* left side */}
         <div className='mb-10 lg:mb-0 w-full lg:w-1/2 flex justify-center'>
-          <img src='./img/studypc.jpg' alt='' className='rounded' />
+          <Image src='/img/studypc.jpg' alt='' className='rounded' width={640} height={427} />
         </div>
         {/* right side */}
         <div className='lg:pl-12 lg:py-6 w-full lg:w-1/2'>

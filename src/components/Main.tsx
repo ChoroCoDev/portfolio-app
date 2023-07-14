@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 export const Main = () => {
@@ -21,7 +22,7 @@ export const Main = () => {
           </button>
         </div>
         <div className='md:w-1/2 lg:max-w-lg w-5/6'>
-          <img src='./img/hello_world.jpg' alt='' />
+          <Image src='/img/hello_world.jpg' alt='' width={640} height={427} className='object-fit' />
         </div>
       </div>
     </section>
