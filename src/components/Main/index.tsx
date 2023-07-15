@@ -1,3 +1,4 @@
+import { ContactButton } from './ContactButton'
 import Image from 'next/image'
 import React from 'react'
 
@@ -17,9 +18,7 @@ export const Main = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, pariatur? Corporis quisquam voluptas eum,
             culpa id itaque consequatur veritatis rerum.
           </p>
-          <button className='text-white bg-green-500 py-2 px-6 border-0 rounded text-lg hover:bg-green-600 duration-300'>
-            Contact
-          </button>
+          <ContactButton />
         </div>
         <div className='md:w-1/2 lg:max-w-lg w-5/6'>
           <Image src='/img/hello_world.jpg' alt='' width={640} height={427} className='object-fit' />
