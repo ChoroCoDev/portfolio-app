@@ -23,14 +23,11 @@ export const metadata: Metadata = {
       sizes: '16x16',
     },
     {
-      rel: 'manifest',
-      url: '/favicons/site.webmanifest',
-    },
-    {
       rel: 'mask-icon',
       url: '/favicons/safari-pinned-tab.svg',
     },
   ],
+  manifest: '/favicons/site.webmanifest',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
