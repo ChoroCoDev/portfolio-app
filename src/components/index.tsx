@@ -1,4 +1,5 @@
 export * from './About'
+export * from './Blog'
 export * from './Footer'
 export * from './Header'
 export * from './Icons'

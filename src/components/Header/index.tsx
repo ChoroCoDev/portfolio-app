@@ -14,6 +14,10 @@ export const Header = () => {
         link: '#about',
       },
       {
+        title: 'Blog',
+        link: '#blog',
+      },
+      {
         title: 'Skills',
         link: '#skills',
       },
