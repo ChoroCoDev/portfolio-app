@@ -18,7 +18,7 @@ export const ContactButton = () => {
           <iframe
             title='Contact Web Form'
             src='https://docs.google.com/forms/d/e/1FAIpQLSdU3vNpyEqEM395osUJt9TqbhiXgl7UMYXaBcCrc-IxqhY5Ag/viewform?embedded=true'
-            className='w-full md:h-[48rem]'>
+            className='w-full md:h-[48rem] h-screen'>
             読み込んでいます…
           </iframe>
         </DialogBody>
