@@ -7,7 +7,7 @@ export const Header = () => {
     () => [
       {
         title: 'Home',
-        link: '#home',
+        link: '#top',
       },
       {
         title: 'About',
